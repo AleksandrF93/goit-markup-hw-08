@@ -1711,6 +1711,12 @@ footer {
   border: 1px solid #eeeeee;
 }
 
+@media screen and (max-width: 767px) {
+  .card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .card {
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
