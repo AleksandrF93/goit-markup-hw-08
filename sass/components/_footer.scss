@@ -1,0 +1,217 @@
+/*FOOTER*/
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.logo__secondary--inverse {
+  color: $color-primery-bcg;
+}
+
+.adress-information {
+  @media screen and(max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and(min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.adress-information--upper {
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 61px;
+    padding-right: 74px;
+  }
+  @media screen and(min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.adress-information--centered {
+  @media screen and(max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.adress {
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: $color-primery-bcg;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  width: 231px;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.adress__link {
+  display: flex;
+  flex-direction: column;
+  @media screen and(max-width:1199px) {
+    align-items: center;
+  }
+}
+
+.adress__connect {
+  margin-top: 9px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+
+.invite {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and(max-width: 1199px) {
+    align-items: center;
+  }
+
+  @media screen and(max-width: 767px) {
+    margin-top: 60px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-left: 70px;
+    margin-top: 12px;
+  }
+}
+
+.invite__icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 206px;
+}
+
+.invite__header {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: $color-primery-bcg;
+}
+
+.invite__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+    border-radius: 50%;
+  }
+}
+
+.invite__icon {
+  fill: #fff;
+}
+
+.footer-form {
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-top: 12px;
+    margin-left: 93px;
+  }
+}
+
+.footer-form__input {
+  margin-top: 20px;
+  padding: 0 0 0 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  color: $color-primery-bcg;
+
+  &:focus {
+    border: 1px solid #2196f3;
+    outline: none;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-form__centered {
+  @media screen and(max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.footer-form__button {
+  margin-top: 20px;
+
+  position: relative;
+  padding: 10px 62px 10px 29px;
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $color-primery-bcg;
+
+  background-color: $color-accent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  @media screen and(min-width: 1199px) {
+    margin-left: 12px;
+  }
+}
+
+.footer-form__icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+}
